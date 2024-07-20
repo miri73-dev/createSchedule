@@ -17,9 +17,6 @@ Student controller endpoints: (similar structure to lesson endpoints)
 
 Sample code snippets
 
-Consider providing code snippets that demonstrate how to interact with your API. for example:
-
-Java
 // Get all classes
 RestTemplate restTemplate = new RestTemplate();
 List<Lesson> lessons = restTemplate.getForObject("http://localhost:8080/lesson", List.class);
@@ -28,4 +25,5 @@ List<Lesson> lessons = restTemplate.getForObject("http://localhost:8080/lesson",
 lesson newLesson = new Lesson();
 newLesson.setName("Introduction to Spring");
 restTemplate.postForObject("http://localhost:8080/lesson", newLesson, null);
+
 It is important to use the code carefully.
